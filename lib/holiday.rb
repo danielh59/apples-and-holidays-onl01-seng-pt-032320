@@ -60,7 +60,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 holiday_hash.each do |name, attribute|
   name.capitalize!
-  attribute.capitalize!
+ x = attribute.split
+ x.capitalize!
 end
 
 def all_holidays_with_bbq(holiday_hash)
